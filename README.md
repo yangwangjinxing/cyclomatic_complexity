@@ -1,7 +1,7 @@
 # Cyclomatic Complexity
-Complexity cyclomatic of source.
+Calculating cyclic complexity based on [lizard]("https://github.com/terryyin/lizard").
 
-## install
+## Install
 ```
 python3 -m pip install yangwangjinxin_cyclomatic_complexity
 ```
@@ -9,5 +9,9 @@ python3 -m pip install yangwangjinxin_cyclomatic_complexity
 ## Usage
 
 ```
+import cyclomatic_complexity as cc
+file_result = cc.analyze('main.py')
+dir_result = cc.analyze('.')
+print(dir_result.cyclomatic_complexity)
 ```
 
